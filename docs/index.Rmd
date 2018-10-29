@@ -1,0 +1,24 @@
+---
+title: "IPBES Chapter 4 Literature Review"
+author: "Rainer M. Krug"
+date: "10/29/2018"
+output: 
+  html_document: 
+    theme: united
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# IPBES Chapter 4 Literature Review Literature
+
+## Literature from Systematic Literature Search
+
+## Literature from Review Based Search
+
+## Literature from Expert Opinion
+
+# IPBES Chapter 4 Literature Review Methodology
+
+# IPBES Chapter 4 Literature Review Results
