@@ -13,11 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # IPBES Chapter 4 Literature Review Literature
 
-## Literature from Systematic Literature Search
+## Literature from Systematic Literature Search (5746)
 
-## Literature from Review Based Search
+## Literature from Review Based Search (29)
 
-## Literature from Expert Opinion
+## Literature from Expert Opinion (152)
 
 # IPBES Chapter 4 Literature Review Methodology
 
