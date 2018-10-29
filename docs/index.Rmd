@@ -4,7 +4,7 @@ author: "Rainer M. Krug"
 date: "10/29/2018"
 output: 
   html_document: 
-    theme: united
+    theme: cerulean
 ---
 
 ```{r setup, include=FALSE}
@@ -13,7 +13,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # IPBES Chapter 4 Literature Review Literature
 
-## Literature from Systematic Literature Search (5746)
+## Literature from Systematic Literature Search
+* 5746 Identified Paper
+* 856 Identified as Relevant
+* 646 Revied
 
 ## Literature from Review Based Search (29)
 
@@ -21,4 +24,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # IPBES Chapter 4 Literature Review Methodology
 
+## Link to Spreadsheet
+
 # IPBES Chapter 4 Literature Review Results
+
+## Link to R package with results
