@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # IPBES Chapter 4 Literature Review Methodology
 
 ## Spreadsheet
-The spreadsheet can be downlosaded from [here]("data/Scenarios_Review_Chapter 4_2.0.3.xlsm"). It contains macros to enable the multiselect fields, but the macros are not essential in viewing the spreadsheet itself.
+The spreadsheet can be downlosaded from [here]("./data/Scenarios_Review_Chapter 4_2.0.3.xlsm"). It contains macros to enable the multiselect fields, but the macros are not essential in viewing the spreadsheet itself.
 
 
 # IPBES Chapter 4 Literature Review Results
