@@ -12,5 +12,5 @@ Methodology, Bibliography and Results from the Systematic Literature Review as d
 The website can be found at [https://rkrug.github.io/IPBES_Global_Assessment_Chapter_4_LiteratureReview/](https://rkrug.github.io/IPBES_Global_Assessment_Chapter_4_LiteratureReview/).
 
 # **<span style="color:red"> TODO</span>**
-- [] add DOI
-- [] add more explanatory text
+- [ ] add DOI
+- [ ] add more explanatory text

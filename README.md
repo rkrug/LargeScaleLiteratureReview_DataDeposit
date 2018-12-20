@@ -12,5 +12,5 @@ The website can be found at
 
 # **<span style="color:red"> TODO</span>**
 
-  - \[\] add DOI
-  - \[\] add more explanatory text
+  - \[ \] add DOI
+  - \[ \] add more explanatory text
