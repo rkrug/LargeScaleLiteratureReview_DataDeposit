@@ -9,3 +9,8 @@ good quality of life**.
 
 The website can be found at
 <https://rkrug.github.io/IPBES_Global_Assessment_Chapter_4_LiteratureReview/>.
+
+# **<span style="color:red"> TODO</span>**
+
+  - \[\] add DOI
+  - \[\] add more explanatory text
