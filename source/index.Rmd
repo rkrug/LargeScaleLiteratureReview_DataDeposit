@@ -1,34 +1,49 @@
 ---
 title: "IPBES Chapter 4 Literature Review"
-author: "Rainer M. Krug"
-date: "10/29/2018"
-output: 
-  html_document: 
-    theme: cerulean
+author: 
+- Rainer M. Krug, ^[Department of Evolutionary Biology and Environmental Studies, University of Zürich, Switzerland], Rainer@uzh.ch, Rainer@krugs.de
+- Patricia Alcantara ^[Affiliation]
+- Rob Alkemade ^[Affiliation]
+- Almut Arneth ^[Affiliation]
+- Elena Bukvareva ^[Affiliation]
+- Paul Leadley ^[Affiliation]
+- Ignacio Palomo ^[Affiliation]
+- Yunne Shin ^[Affiliation]
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 # IPBES Chapter 4 Literature Review Literature
 
-The bibliographies used in the Systematic Literature Review (SLR) can be downloaded as .bib files. They are available as a complete bibliography or splitted up from the following links:
+The bibliographies used in the Systematic Literature Review (SLR) can be downloaded as 
+.bib files. They are available as a complete bibliography or splitted up from the 
+following links:
 
-* [SystematicLiteratureReview.bib (10.6 MB)](./data/SystematicLiteratureReview.bib) the complete bibliography
-* [MasterExpert.bib (136KB)](./data/MasterExpert.bib) all paper added from the experts (includes Additional and KeyPapers)
-* [MasterExpertAdditional.bib (265 kb)](./data/MasterExpertAdditional.bib) all additional paper added from the experts
-* [MasterExpertKeyPapers.bib (136 kb)](./data/MasterExpertKeyPapers.bib) all Key Papers added by the experts
-* [MasterPaperTrail.bib (33 kb)](./data/MasterPaperTrail.bib) paper resulting from the paper trail literature search
-* [MasterSystematic.bib (10.3 Mb)](./data/MasterSystematic.bib) papers resulting from the literature search on Web of Science and Scopus
-* [RootReviewPaper.bib (37 kb)](./data/RootReviewPaper.bib) papers used as root for the Paper Trail search - the Root Review paper are **not** included in the actual SLR as they were reviews.
+* [SystematicLiteratureReview.bib (10.6 MB)](./data/SystematicLiteratureReview.bib) the 
+	complete bibliography
+* [MasterExpert.bib (136KB)](./data/MasterExpert.bib) all paper added from the experts 
+	(includes Additional and KeyPapers)
+* [MasterExpertAdditional.bib (265 kb)](./data/MasterExpertAdditional.bib) all additional 
+	paper added from the experts
+* [MasterExpertKeyPapers.bib (136 kb)](./data/MasterExpertKeyPapers.bib) all Key Papers 
+	added by the experts
+* [MasterPaperTrail.bib (33 kb)](./data/MasterPaperTrail.bib) paper resulting from the 
+	paper trail literature search
+* [MasterSystematic.bib (10.3 Mb)](./data/MasterSystematic.bib) papers resulting from the 
+	literature search on Web of Science and Scopus
+* [RootReviewPaper.bib (37 kb)](./data/RootReviewPaper.bib) papers used as root for the 
+	Paper Trail search - the Root Review paper are **not** included in the actual SLR as 
+	they were reviews.
 * [NotTagged.bib (477 kb)](./data/NotTagged.bib) papers not tagged
 
 
 # IPBES Chapter 4 Literature Review Methodology
 
 ## Spreadsheet
-The spreadsheet can be downloaded from [here](./data/Scenarios_Review_Chapter%204_2.0.3.xlsm). It contains macros to enable the multiselect fields, but the macros are not essential in viewing the spreadsheet itself.
+The spreadsheet used for the review can be can be downloaded from 
+[here](./data/Scenarios_Review_Chapter%204_2.0.3.xlsm). It contains macros to enable the 
+multiselect fields, but the macros are not essential in viewing the spreadsheet itself.
 
 
 # IPBES Chapter 4 Literature Review Results

@@ -3,38 +3,42 @@
 SRCDIR = source
 OUTDIR = docs
 
-RMD = $(wildcard $(SRCDIR)/*.Rmd)
+RMD := $(wildcard $(SRCDIR)/*.Rmd)
 
-# HTML  = $(RMD:.Rmd=.html)
-TMP  = $(RMD:.Rmd=.html)
-HTML = ${subst $(SRCDIR),$(OUTDIR),$(TMP)}
+# HTML := $(RMD:.Rmd=.html)
+TMP  := $(RMD:.Rmd=.html)
+HTML := ${subst $(SRCDIR),$(OUTDIR),$(TMP)}
 
-all: clean update html
+all: clean html
 
 html:	$(HTML)
 
 # %.html: %.Rmd
 $(OUTDIR)/%.html: $(SRCDIR)/%.Rmd
-	@Rscript -e "rmarkdown::render('$<', output_format = 'prettydoc::html_pretty', output_dir = './$(OUTDIR)/')"
-
-update:
-	@Rscript -e "devtools::load_all(here::here()); emeScheme:::updateFromGoogleSheet(token = './source/googlesheets_token.rds')"
-
-# publish:
-#	git add DESCRIPTION data/emeScheme.rda data/emeScheme_gd.rda inst/googlesheet/emeScheme.xlsx docs/index.html
-#	git commit -m "Update From Googlesheets"
-#	git push
+	@Rscript -e "rmarkdown::render('$<', output_dir = './$(OUTDIR)/')"
 
 clean:
 	rm -f $(HTML)
 
-files:
-	@echo RMD: $(RMD)
-	@echo TMP: $(TMP)
-	@echo HTML: $(HTML)
+############# Help targets #############
+
+list_variables:
+	@echo
+	@echo "#############################################"
+	@echo "## Variables ################################"
+	@make -pn | grep -A1 "^# makefile"| grep -v "^#\|^--" | sort | uniq
+	@echo "#############################################"
+	@echo ""
 
 ## from https://stackoverflow.com/a/26339924/632423
-list:
-	@$(MAKE) -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$' | xargs
+list_targets:
+	@echo
+	@echo "#############################################"
+	@echo "## Targets    ###############################"
+	@make -pRrq -f $(lastword $(MAKEFILE_LIST)) : 2>/dev/null | awk -v RS= -F: '/^# File/,/^# Finished Make data base/ {if ($$1 !~ "^[#.]") {print $$1}}' | sort | egrep -v -e '^[^[:alnum:]]' -e '^$@$$'
+	@echo "#############################################"
+	@echo
 
-.PHONY: list files update clean all publish
+list: list_variables list_targets
+
+.PHONY: list clean all
