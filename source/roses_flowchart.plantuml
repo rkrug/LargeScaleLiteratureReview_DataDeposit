@@ -1,0 +1,67 @@
+@startuml
+
+skinparam backgroundColor White
+skinparam state {
+  StartColor MediumBlue
+  EndColor Red
+  BackgroundColor White
+  BorderColor Gray
+  ArrowColor Black
+}
+
+state "Records identified\n Web Of Science\n[[data/raw_WoS.bib]]" as rec1_1
+rec1_1 : (n = 3433)
+state "Records identified\n Scopus\n[[data/raw_Scopus.bib]]" as rec1_2
+rec1_2 : (n = 4485)
+
+state "Records after duplicates removed\n[[data/raw_Scopus_WoS_merged.bib]]" as rec2
+rec2 : (n = 5060)
+rec1_1 -d-> rec2
+rec1_2 -d-> rec2
+
+'    state "Duplicates" as out2
+'    out3 : (n = )
+'    rec3 -r-> out2
+
+state "Records after date screening\n[[data/MasterSystematic.bib]]" as rec3
+rec3 : (n = 4763)
+rec2 -d-> rec3
+
+'    state "Excluded" as out3
+'    out3 : (n = )
+'    rec3 -r-> out3
+
+state "Records after title & abstract screening\n[[data/MasterSystematicRelevant.bib]]" as rec4
+rec4 : (n = 857)
+rec3 -d-> rec4
+
+'    state "Excluded" as out5
+'    out5 : (n = )
+'    rec5 -r-> out4
+
+state "Articles Reviewed\n[[data/MasterSystematicReviewed.bib]]" as rec5
+rec5 : (n = 646)
+rec4 -d-> rec5
+
+state "Overall Articles Reviewed\n[[data/Done.bib]]" as rec6
+rec6 : (n = 747)
+rec5 -d-> rec6
+
+state "Additional Identified Articles\n Review Screening\n[[data/MasterPaperTrail.bib]]" as add11
+add11 : (n = 29)
+
+state "Additional Articles Reviewed\nReview Screening\n[[data/MasterPaperTrailReviewed.bib]]" as add12
+add12 : (n = 16)
+add11 -d-> add12
+
+state "Additional Identified Articles\nExpert Selection\n[[data/MasterExpert.bib]]" as add21
+add21 : (n = 153)
+
+state "Additional Reviewed Articles\nExpert Selection\n[[data/MasterExpertReviewed.bib]]" as add22
+add22 : (n = 85)
+add21 -d-> add22
+
+add12 -d-> rec6
+add22 -d-> rec6
+
+@enduml

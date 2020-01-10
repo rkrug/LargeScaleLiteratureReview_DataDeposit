@@ -1,0 +1,13 @@
+<map id="roses_flowchart_map" name="roses_flowchart_map">
+<area shape="rect" id="id1" href="data/Done.bib" title="data/Done.bib" alt="" coords="421,714,520,730"/>
+<area shape="rect" id="id2" href="data/raw_WoS.bib" title="data/raw_WoS.bib" alt="" coords="16,44,140,61"/>
+<area shape="rect" id="id3" href="data/raw_Scopus.bib" title="data/raw_Scopus.bib" alt="" coords="195,44,339,61"/>
+<area shape="rect" id="id4" href="data/MasterExpert.bib" title="data/MasterExpert.bib" alt="" coords="680,442,834,459"/>
+<area shape="rect" id="id5" href="data/MasterPaperTrail.bib" title="data/MasterPaperTrail.bib" alt="" coords="381,442,560,459"/>
+<area shape="rect" id="id6" href="data/MasterSystematic.bib" title="data/MasterSystematic.bib" alt="" coords="81,299,262,315"/>
+<area shape="rect" id="id7" href="data/MasterExpertReviewed.bib" title="data/MasterExpertReviewed.bib" alt="" coords="648,586,866,603"/>
+<area shape="rect" id="id8" href="data/MasterSystematicRelevant.bib" title="data/MasterSystematicRelevant.bib" alt="" coords="52,434,291,451"/>
+<area shape="rect" id="id9" href="data/raw_Scopus_WoS_merged.bib" title="data/raw_Scopus_WoS_merged.bib" alt="" coords="52,172,292,188"/>
+<area shape="rect" id="id10" href="data/MasterPaperTrailReviewed.bib" title="data/MasterPaperTrailReviewed.bib" alt="" coords="349,586,592,603"/>
+<area shape="rect" id="id11" href="data/MasterSystematicReviewed.bib" title="data/MasterSystematicReviewed.bib" alt="" coords="49,578,294,595"/>
+</map>

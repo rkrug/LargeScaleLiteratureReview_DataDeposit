@@ -1,24 +1,52 @@
 ## All Rmarkdown files in the working directory
 
-SRCDIR = source
-OUTDIR = docs
+SRCDIR := source
+OUTDIR := docs
 
-RMD := $(wildcard $(SRCDIR)/*.Rmd)
+PLANTUML  := $(wildcard $(SRCDIR)/*.plantuml)
 
-# HTML := $(RMD:.Rmd=.html)
-TMP  := $(RMD:.Rmd=.html)
-HTML := ${subst $(SRCDIR),$(OUTDIR),$(TMP)}
+RMD  := $(wildcard $(SRCDIR)/*.Rmd)
 
-all: clean html
+HTML := $(RMD:.Rmd=.html)
+HTML := ${subst $(SRCDIR),$(OUTDIR),$(HTML)}
+
+PDF  := $(RMD:.Rmd=.pdf)
+PDF := ${subst $(SRCDIR),$(OUTDIR),$(PDF)}
+
+all: clean figs html
+
+############# figs #############
+
+figs: 
+	plantuml $(PLANTUML) -o figs
+	plantuml $(PLANTUML) -tsvg -o figs
+	
+clean_figs:
+	rm -rf figs
+
+############# html #############
 
 html:	$(HTML)
 
-# %.html: %.Rmd
 $(OUTDIR)/%.html: $(SRCDIR)/%.Rmd
-	@Rscript -e "rmarkdown::render('$<', output_dir = './$(OUTDIR)/')"
+	@Rscript -e "rmarkdown::render('$<', output_dir = './$(OUTDIR)/', output_format = 'html_document')"
 
-clean:
+clean_html:
 	rm -f $(HTML)
+
+############# pdf #############
+
+pdf:	$(PDF)
+
+$(OUTDIR)/%.pdf: $(SRCDIR)/%.Rmd
+	@Rscript -e "rmarkdown::render('$<', output_dir = './$(OUTDIR)/', output_format = 'pdf_document')"
+
+clean_pdf:
+	rm -f $(PDF)
+
+############# Help targets #############
+
+clean: clean_pdf clean_html clean_figs
 
 ############# Help targets #############
 
@@ -41,4 +69,4 @@ list_targets:
 
 list: list_variables list_targets
 
-.PHONY: list clean all
+.PHONY: list clean clean_pdf clean_html clean_figs figs all
