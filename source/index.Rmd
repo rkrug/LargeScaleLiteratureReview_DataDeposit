@@ -5,8 +5,8 @@ author:
   University of Zürich, Switzerland], Rainer@uzh.ch, Rainer@krugs.de
 - Patricia Alcantara ^[Affiliation]
 - Rob Alkemade ^[Affiliation]
-- Almut Arneth ^[Affiliation]
-- Elena Bukvareva ^[Affiliation]
+- Almut Arneth ^[KIT/IMK-IFU, Kreuzeckbahnstr. 19, 82467 Garmisch-Partenkirchen, Germany]
+- Elena Bukvareva ^[Biodiversity Conservation Center, Moscow, Russia]
 - Paul Leadley ^[Affiliation]
 - Ignacio Palomo ^[Laboratoire d'Ecologie Alpine, CNRS - Université Grenoble Alps, Grenoble Cedex 9, France] ^[Basque Centre for Climate Change (BC3), Leioa, Spain]
 - Yunne Shin ^[Affiliation]
