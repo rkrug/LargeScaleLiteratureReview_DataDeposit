@@ -39,6 +39,93 @@ In addition, the following bibliographies are available:
 
 All are available in the directory **[./data/](./data/)**
 
+
+## Search and identification of relevant literature
+
+To identify the literature for the review, a three stage approach was used:
+
+1. Literature search for original research articles (not reviews) using WoS [@ref] and Scopus [@ref] with following merging and removal of duplicates
+2. Extraction of relevant papers using the citations in by the authors selected review papers and adding the missing articles
+3. Supplementing reference list by using expert opinion to identify missing papers ("key paper")
+
+Literature was limited to paper not older than 2008 and not newer than 2017 
+**<span style="color:red">CONFIRM</span>**
+
+### Search term WoS
+
+```
+TS=(
+    "Global*" AND
+    (
+      "Future impact*" OR
+      "Future effect*" OR
+      "Future response*" OR
+      "projecti*" OR
+      "forecast*" OR
+      "scenario*"
+    ) AND (
+      "species" OR
+      "biological" OR
+      "ecological" OR
+      "nature" OR
+      "biodiversity" OR
+      "natural resource*" OR
+      "organism*" OR
+      "ecosystem*" OR
+      "ecological service*" OR
+      "conservation"
+    )
+   ) AND
+SU=(
+    "Agriculture" OR
+    "Biodiversity & Conservation" OR
+    "Biophysics" OR
+    "Entomology" OR
+    "Environmental Sciences & Ecology" OR
+    "Fisheries" OR
+    "Forestry" OR
+    "Marine & Freshwater Biology" OR
+    "Plant Sciences" OR
+    "Zoology"
+    )
+```
+
+### Search for Scopus
+
+```
+TITLE-ABS-KEY (
+                ("global") AND
+                (
+                  "Future impact*" OR
+                  "Future effect*" OR
+                  "Future response*" OR
+                  "projecti*"  OR
+                  "forecast*"  OR
+                  "scenario*"
+                ) AND
+                (
+                  "species" OR
+                  "biological" OR
+                  "ecological" OR
+                  "nature" OR
+                  "biodiversity" OR
+                  "natural resource*" OR
+                  "organism*" OR
+                  "ecosystem*" OR
+                  "ecological service*" OR
+                  "conservation"
+                )
+              ) AND
+SUBJAREA (
+          "agri" OR
+          "envi"  OR
+          "soci"  OR
+          "econ"
+         ) AND
+DOCTYPE ( "ar" )
+```
+
+
 <!-- 
 
 ## 1. Raw results from Systematic Literature Search (SLR)
