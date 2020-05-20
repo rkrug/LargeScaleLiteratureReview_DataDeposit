@@ -9,5 +9,5 @@ Review as done for the **IPBES Global Assessment 2019**, Chapter 4,
 good quality of life**.
 
 The website can be found at
-<https://rkrug.github.io/LargeScaleLiteratureReview_DataDeposit/index.ht>.
+<https://rkrug.github.io/LargeScaleLiteratureReview_DataDeposit/index.html>.
 
