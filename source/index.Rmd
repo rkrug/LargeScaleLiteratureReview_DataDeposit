@@ -37,7 +37,7 @@ In addition, the following bibliographies are available:
 
 * **[./data/RootReviewPaper.bib](./data/RootReviewPaper.bib)**: Review paper used for the Review Screening and **not** included in the actual review
 
-All are available in the directory **[./data/](./data/)**
+All are available in the **[data directory](https://github.com/rkrug/LargeScaleLiteratureReview_DataDeposit/tree/master/docs/data)** in the repository or in the data deposit on Zenodo.
 
 
 ## Search and identification of relevant literature
