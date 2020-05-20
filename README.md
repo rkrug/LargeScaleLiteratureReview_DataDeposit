@@ -3,7 +3,7 @@ IPBES Global Assessment 2019 Chapter 4 Systematic Literature Review - Bibliograp
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3603072.svg)](https://doi.org/10.5281/zenodo.3603072)
 
-Bibliography and from the Systematic Literature
+Bibliography from the Systematic Literature
 Review as done for the **IPBES Global Assessment 2019**, Chapter 4,
 **Plausible futures of nature, its contributions to people and their
 good quality of life**.

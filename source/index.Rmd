@@ -4,12 +4,12 @@ author:
 - Rainer M. Krug, ^[Department of Evolutionary Biology and Environmental Studies,
   University of Zürich, Switzerland], Rainer@uzh.ch, Rainer@krugs.de
 - Patricia Alcantara ^[Affiliation]
-- Rob Alkemade ^[Affiliation]
-- Almut Arneth ^[KIT/IMK-IFU, Kreuzeckbahnstr. 19, 82467 Garmisch-Partenkirchen, Germany]
+- Rob Alkemade ^[PBL Netherlands Environmental Assessment Agency, The Hague, Netherlands]
+- Almut Arneth ^[KIT/IMK-IFU, Garmisch-Partenkirchen, Germany]
 - Elena Bukvareva ^[Biodiversity Conservation Center, Moscow, Russia]
-- Paul Leadley ^[Affiliation]
-- Ignacio Palomo ^[Laboratoire d'Ecologie Alpine, CNRS - Université Grenoble Alps, Grenoble Cedex 9, France] ^[Basque Centre for Climate Change (BC3), Leioa, Spain]
-- Yunne Shin ^[Affiliation]
+- Paul Leadley ^[Université Paris Saclay, Orsay Cedex, France]
+- Ignacio Palomo ^[Laboratoire d'Ecologie Alpine, CNRS - Université Grenoble Alps, Grenoble, France] ^[Basque Centre for Climate Change (BC3), Leioa, Spain]
+- Yunne Shin ^[Institut de Recherche pour le Développement (IRD), Université de Montpellier, CNRS, Montpellier France]
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
   html_document: default
@@ -48,8 +48,7 @@ To identify the literature for the review, a three stage approach was used:
 2. Extraction of relevant papers using the citations in by the authors selected review papers and adding the missing articles
 3. Supplementing reference list by using expert opinion to identify missing papers ("key paper")
 
-Literature was limited to paper not older than 2008 and not newer than 2017 
-**<span style="color:red">CONFIRM</span>**
+Literature was limited to paper not older than 2008 and not newer than 2017.
 
 ### Search term WoS
 
