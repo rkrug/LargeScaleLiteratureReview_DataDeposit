@@ -18,6 +18,10 @@ output:
  
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3603072.svg)](https://doi.org/10.5281/zenodo.3603072)
 
+[![Generic badge](https://img.shields.io/badge/github-repo-<COLOR>.svg)](https://github.com/rkrug/LargeScaleLiteratureReview_DataDeposit)
+[![Generic badge](https://img.shields.io/badge/github-website-<COLOR>.svg)](https://rkrug.github.io/LargeScaleLiteratureReview_DataDeposit/index.html)
+
+
 # IPBES Chapter 4 Literature Review Literature
 
 This repository contains the bibliography files as used in the Systematic literature review in Chapter 4 of the IPBES Global Assessment.
