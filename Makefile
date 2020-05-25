@@ -13,7 +13,7 @@ HTML := ${subst $(SRCDIR),$(OUTDIR),$(HTML)}
 PDF  := $(RMD:.Rmd=.pdf)
 PDF := ${subst $(SRCDIR),$(OUTDIR),$(PDF)}
 
-all: clean figs html
+all: clean figs html pdf
 
 ############# figs #############
 
@@ -36,10 +36,8 @@ clean_html:
 
 ############# pdf #############
 
-pdf:	$(PDF)
-
-$(OUTDIR)/%.pdf: $(SRCDIR)/%.Rmd
-	@Rscript -e "rmarkdown::render('$<', output_dir = './$(OUTDIR)/', output_format = 'pdf_document')"
+pdf: html
+	wkhtmltopdf ./docs/index.html ./docs/index.pdf
 
 clean_pdf:
 	rm -f $(PDF)
